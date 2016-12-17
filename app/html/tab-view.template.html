@@ -1,0 +1,37 @@
+
+    <ul class="nav nav-tabs">
+         <li ng-class="{active: tabCtrl.checkTab(1)}">
+             <a href="#" ng-click="tabCtrl.changeTab(1)">Announcements</a>
+         </li>
+
+
+         <li ng-class="{active: tabCtrl.checkTab(2)}">
+             <a href="#" ng-click="tabCtrl.changeTab(2)">Login</a>
+         </li>
+
+         <li ng-class="{active: tabCtrl.checkTab(3)}">
+             <a href="#"  ng-click="tabCtrl.changeTab(3)">Sign Up</a>
+         </li>
+
+         <li ng-class="{active: tabCtrl.checkTab(4)}">
+             <a href="#" ng-click="tabCtrl.changeTab(4)">About US</a>
+         </li>
+    </ul>
+
+    <div class="Announcements" ng-show="tabCtrl.currentTab == 1">
+        <announcement-view></announcement-view>
+    </div>
+
+    <div class="loginForm" ng-show="tabCtrl.currentTab == 2">
+        <login-view></login-view>
+    </div>
+
+    <div class="registerForm" ng-show="tabCtrl.currentTab == 3">
+        <register-view></register-view>
+    </div>
+
+    <div class="aboutUs" ng-show="tabCtrl.currentTab == 4">
+        <h1>
+            inja vaaaass maaaasss B-)
+        </h1>
+    </div>
